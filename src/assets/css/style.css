@@ -1,0 +1,66 @@
+.shooter {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+    background: radial-gradient(circle at center, rgb(248, 248, 248) 0%, rgb(196, 199, 190) 100%);
+    overflow: hidden;
+}
+
+.shooter .score {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    opacity: 0.2;
+}
+.shooter .score .value {
+    font-size: 140px;
+}
+.shooter .score .unit {
+    font-size: 30px;
+}
+
+.shooter .targets {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.shooter .targets .target {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 12vw;
+    height: 12vw;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
+}
+
+.shooter .targets .target::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 16.66%;
+    left: 16.66%;
+    width: 66.66%;
+    height: 66.66%;
+    background:rgb(146, 6, 6); 
+    border-radius: 50%;
+}
+
+.shooter .targets .target::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 33.33%;
+    left: 33.33%;
+    width: 33.33%;
+    height: 33.33%;
+    background:rgb(247, 247, 247); 
+    border-radius: 50%;
+}
