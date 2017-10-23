@@ -1,4 +1,4 @@
-# Sunset RoadTrip
+# Targer Shooter
 Min Game, Target Shooter - Hetic Project
 
 ### Setup
